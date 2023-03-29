@@ -1,0 +1,38 @@
+.container {
+  background: #eee;
+  width: 1000px;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px 150px;
+
+  grid-row-gap: 30px;
+  grid-column-gap: 20px;
+  grid-gap: 30px;
+}
+
+.items {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.item1 {
+  background-color: pink;
+}
+.item2 {
+  background-color: teal;
+}
+.item3 {
+  background-color: yellowgreen;
+}
+.item4 {
+  background-color: crimson;
+}
+.item5 {
+  background-color: goldenrod;
+}
+.item6 {
+  background-color: indianred;
+}

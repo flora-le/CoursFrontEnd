@@ -1,0 +1,33 @@
+/* put this on all css, to control better size,... of elements*/
+
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  /* background-color: #f1f1f1; */
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 65px;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* create background image */
+  background-image: linear-gradient(to right, #373737, #c0b283);
+  /* add css vendor to make it work */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  letter-spacing: 4px;
+  padding-top: 100px;
+}

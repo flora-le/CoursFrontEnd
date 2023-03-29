@@ -1,0 +1,54 @@
+body {
+  width: 100%;
+  /*no height by default*/
+  height: 100vh;
+  margin: 0;
+  /* background-color: #333; */
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background: crimson;
+}
+
+/* .box:active {
+  background: salmon;
+} */
+/*hover is prior to active*/
+.box:hover {
+  background: violet;
+}
+
+/* input:focus {
+  background: lightblue;
+} */
+
+input:checked {
+  width: 250px;
+  height: 250px;
+}
+
+a:visited {
+  color: blue;
+}
+
+li:last-child {
+  background: #000;
+}
+
+/* li:nth-child(2) {
+  background: lightblue;
+}
+
+.item:nth-child(8) {
+  background: green;
+} */
+/*impair = odd, pair = even*/
+li:nth-child(even) {
+  background: lightblue;
+}
+
+p:not(.item2) {
+  color: crimson;
+}

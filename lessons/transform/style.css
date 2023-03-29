@@ -1,0 +1,44 @@
+/* put this on all css, to control better size,... of elements*/
+
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+/*center with absolute*/
+.box1 {
+  width: 300px;
+  height: 300px;
+  /* margin: 20px; */
+  background: salmon;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* translate(x,y), 
+  rotate(45deg)
+  scale()
+  */
+  /* % of its width and height*/
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  /* margin: 20px; */
+  background: salmon;
+  /*distorsion (square -> parallélogramme)*/
+  /* transform: skew(50deg, 60deg); */
+  transform: translateY(300px) rotate(45deg) skew(50deg);
+}

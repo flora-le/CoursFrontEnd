@@ -1,0 +1,53 @@
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  /* background-color: #f1f1f1; */
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+.container {
+  width: 800px;
+  height: 400px;
+  background: midnightblue;
+  display: flex;
+  /* space-evenly/between/around */
+  /* justify-content: center; */
+  /* stretch = all height, except if children has height */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap-reverse; */
+}
+
+.item {
+  height: 150px;
+  width: 150px;
+  background: gold;
+  margin: 5px;
+}
+
+.item:nth-child(1) {
+  background-color: lightblue;
+  /* align-self: center; */
+  /* center h and vertically. Only with flex it's ok */
+  margin: auto;
+}
+.item:nth-child(2) {
+  background-color: lightgreen;
+}
+.item:nth-child(3) {
+  background-color: lightsalmon;
+  /* not working w/ flexbox */
+  /* justify-self: flex-end; */
+  align-self: flex-end;
+  /* align horizontally, self */
+  margin-left: auto;
+}

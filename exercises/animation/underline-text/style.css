@@ -1,0 +1,51 @@
+/* put this on all css, to control better size,... of elements*/
+
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloc-menu {
+  /*relate to body*/
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+span {
+  font-size: 30px;
+  color: #f1f1f1;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  /* makes underline start from middle with auto on left and right */
+  margin: 5px auto 0 auto;
+  border-radius: 2px;
+  background-color: #aaa;
+  transition: width 0.2s ease-out;
+}
+/*when hover span, we use after
+
+*/
+span:hover::after {
+  width: 100%;
+}

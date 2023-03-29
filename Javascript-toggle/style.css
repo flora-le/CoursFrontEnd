@@ -1,0 +1,38 @@
+.container {
+  background: #eee;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  /* grid-template-columns: repeat(auto-fill, 100px); */
+  /* grid-template-columns: repeat(auto-fit, 100px); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 90%;
+  /* implicit grid same height as above */
+  grid-auto-rows: 150px;
+}
+
+.items {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.item1 {
+  background-color: pink;
+}
+.item2 {
+  background-color: teal;
+}
+.item3 {
+  background-color: yellowgreen;
+}
+.item4 {
+  background-color: crimson;
+}
+.item5 {
+  background-color: goldenrod;
+}
+.item6 {
+  background-color: indianred;
+}

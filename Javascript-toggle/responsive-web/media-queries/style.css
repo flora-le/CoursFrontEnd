@@ -1,0 +1,44 @@
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  /* background-color: #f1f1f1; */
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 40px;
+  color: crimson;
+}
+
+/* @media (min-width: 800px) { */
+/* @media print { */
+/* when we have screen (tablet...) */
+/* @media screen { */
+/* vocal search */
+/* @media speech { */
+/* @media (max-width: 800px) and (min-width: 500px) { */
+/* , -> OR */
+/* @media (max-width: 800px), (min-width: 500px) { */
+/* @media (max-height: 800px) {
+  h1 {
+    font-size: 30px;
+    color: lightslategray;
+  }
+} */
+
+@media (orientation: portrait) {
+  h1 {
+    font-size: 30px;
+    color: lightslategray;
+  }
+}

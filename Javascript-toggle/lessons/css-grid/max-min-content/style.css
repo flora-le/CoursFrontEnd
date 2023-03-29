@@ -1,0 +1,40 @@
+.container {
+  background: #eee;
+  width: 1000px;
+  margin: 30px auto;
+
+  display: grid;
+  /* min or max-content is same for row */
+  /* grid-template-rows: repeat(2, min-content); */
+  grid-template-rows: repeat(2, minmax(150px, min-content));
+  grid-template-columns: max-content 1fr min-content;
+  /*----------  */
+  width: 80%;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: minmax(250px, 700px) repeat(2, 1fr);
+}
+
+.items {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.item1 {
+  background-color: pink;
+}
+.item2 {
+  background-color: teal;
+}
+.item3 {
+  background-color: yellowgreen;
+}
+.item4 {
+  background-color: crimson;
+}
+.item5 {
+  background-color: goldenrod;
+}
+.item6 {
+  background-color: indianred;
+}

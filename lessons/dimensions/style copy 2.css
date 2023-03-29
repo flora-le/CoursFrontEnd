@@ -1,0 +1,32 @@
+/*doesn't have height by default*/
+body {
+  height: 100vh; /*viewport height*/
+}
+
+.box {
+  /* next to each other, block */
+  /* display: inline-block; */
+  display: none;
+  width: 100px;
+  height: 100px;
+  /*center only horizontally working*/
+  /* margin: 70px auto;
+  padding: 10px; */
+  background-color: violet;
+  /* border: 5px solid black;
+  box-sizing: border-box; */
+}
+
+/* span {
+  display: block;
+  width: 500px;
+  background-color: chartreuse;
+} */
+
+span {
+  color: red;
+  font-size: 28px;
+  display: none;
+  background-color: pink;
+  height: 50px;
+}

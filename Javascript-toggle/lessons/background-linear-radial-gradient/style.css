@@ -1,0 +1,23 @@
+/* put this on all css, to control better size,... of elements*/
+
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  /* to bottom [right]*/
+  /* background: linear-gradient(to top left, #fdb99b, #cd8bf3); */
+  /* background: linear-gradient(180deg, #fdb99b, #cd8bf3); */
+  /* background: linear-gradient(180deg, #fdb99b, 25%, #cd8bf3, crimson, lightblue); */
+  background: radial-gradient(#fdb99b, #cd8bf3);
+}

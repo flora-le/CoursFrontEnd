@@ -1,0 +1,20 @@
+/*doesn't have height by default*/
+body {
+  height: 100vh; /*viewport height*/
+}
+
+#p1 {
+  display: none;
+}
+
+#p2 {
+  visibility: hidden;
+}
+
+#p3 {
+  opacity: 0.5;
+}
+
+a {
+  opacity: 0;
+}

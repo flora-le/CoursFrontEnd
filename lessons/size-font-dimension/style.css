@@ -1,0 +1,32 @@
+body {
+  width: 100%;
+  /*no height by default*/
+  height: 100vh;
+  margin: 0;
+  background-color: #333;
+}
+
+.box {
+  /*vw, %, auto*/
+  /*auto = all width if block*/
+  /* width: auto; */
+  /*vh, auto = content + padding+ border*/
+  /* height: auto; */
+  /* padding: 50px 0; */
+  /* border: 10px solid green; */
+  background: crimson;
+
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.parent {
+  font-size: 5px;
+}
+
+h1 {
+  color: #f1f1f1;
+  /* px, 5rem (root element html = 16px) = 5*16px, 
+  em=closest ancestor/parent with font size set */
+  font-size: 10em;
+}

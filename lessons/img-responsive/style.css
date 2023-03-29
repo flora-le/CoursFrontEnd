@@ -1,0 +1,21 @@
+/*doesn't have height by default*/
+body {
+  height: 100vh; /*viewport height*/
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.card-img {
+  width: 640px;
+  height: 600px;
+  /* overflow: hidden; */
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.block-img {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}

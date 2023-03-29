@@ -1,0 +1,19 @@
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  background: salmon;
+  /*scroll = horizontal+vertical, hidden, auto = scrollbar on right only*/
+  overflow: auto;
+  overflow: visible;
+}

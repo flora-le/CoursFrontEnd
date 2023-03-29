@@ -1,0 +1,61 @@
+/*fusion margin*/
+/* .wrap {
+  width: 600px;
+  height: 600px;
+  background-color: darkturquoise;
+  margin: 100px auto;
+}
+.box1,
+.box2,
+.box3 {
+  width: 600px;
+  height: 200px;
+}
+
+
+.box1 {
+  background-color: palevioletred;
+  margin-bottom: 220px;
+}
+.box2 {
+  background-color: thistle;
+  margin-top: 200px;
+}
+.box3 {
+  background-color: crimson;
+} */
+
+/* box1 push all from body without background blue if parent has no content (or no content above box1) and has no margin
+
+and if wrap has margin, its fusion
+
+*/
+
+.wrap {
+	width: 600px;
+	height: 600px;
+	background-color: darkturquoise;
+	margin: 0px auto;
+	/*border add content*/
+	/* border-top: 1px solid transparent; */
+	/* or padding, it adds content to parent, and margin top in box1 can work */
+	padding-top: 200px;
+}
+.box1,
+.box2,
+.box3 {
+	width: 600px;
+	height: 200px;
+}
+
+.box1 {
+	background-color: palevioletred;
+	/* if padding top in wrap , remove margin*/
+	/* margin-top: 100px; */
+}
+.box2 {
+	background-color: thistle;
+}
+.box3 {
+	background-color: crimson;
+}

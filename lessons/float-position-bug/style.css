@@ -1,0 +1,33 @@
+.container {
+  background-color: orange;
+  width: 500px;
+  /*all content*/
+  height: auto;
+}
+/*after is pushed after the 2 blocks which are floating
+To fix bug appearing when 2 float, and no content
+*/
+/* .container::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+.bloc {
+  width: 100px;
+  height: 100px;
+}
+
+.b1 {
+  background-color: green;
+  float: left;
+}
+
+/* p {
+  clear: left;
+} */
+
+.b2 {
+  background-color: crimson;
+  float: right;
+}

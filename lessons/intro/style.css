@@ -1,0 +1,47 @@
+body {
+  height: 100vh;
+}
+
+.card-img {
+  width: 50%;
+  height: auto;
+  background-color: #f1f1f1;
+  border: 1px solid #333;
+}
+
+.block-img {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.card-img h3 {
+  padding: 10px;
+}
+.card-img p {
+  padding: 0px 10px 10px 10px;
+}
+
+.card-img hr {
+  margin-bottom: 15px;
+}
+.card-img a {
+  padding: 0px 10px;
+  color: #333;
+  text-decoration: none;
+  cursor: auto;
+}
+
+/* 
+
+
+
+
+.description {
+  padding: 10px;
+} */

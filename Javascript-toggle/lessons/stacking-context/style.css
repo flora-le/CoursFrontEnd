@@ -1,0 +1,54 @@
+/* put this on all css, to control better size,... of elements*/
+
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  /* background-color: #f1f1f1; */
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+/*property "transform" create new context of stacking. Go above title h1 */
+.box {
+  width: 350px;
+  height: 75px;
+  background: crimson;
+  transform: rotate(30deg);
+}
+
+/* stacking context (empilement des couches) */
+
+.element {
+  width: 250px;
+  height: 75px;
+  background: crimson;
+  margin: 5px;
+  /* create a new stacking context for the 3 siblings el1/2/3 */
+  position: relative;
+}
+
+.el1 {
+  background: crimson;
+  z-index: 10;
+}
+.el2 {
+  background: lightblue;
+  top: -50px;
+  left: 50px;
+  z-index: 5;
+}
+.el3 {
+  background: green;
+  top: -100px;
+  left: 100px;
+  /* z-index: 1; */
+}

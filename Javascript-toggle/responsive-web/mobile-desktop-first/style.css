@@ -1,0 +1,65 @@
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  /* background-color: #f1f1f1; */
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  /* mobile first */
+  /* font-size: 22px; */
+  font-size: 80px;
+  color: crimson;
+  text-align: center;
+}
+
+/* mobile-first -> screen (not print...) + min width
+
+start from small to large screen (computer, tv)
+
+*/
+/* @media screen and (min-width: 400px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 50px;
+  }
+} */
+
+/* until width = 1920 (1080 height) */
+
+/* desktop first (e-commerce...) */
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 25px;
+  }
+}

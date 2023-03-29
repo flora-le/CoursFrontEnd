@@ -1,0 +1,49 @@
+/* put this on all css, to control better size,... of elements*/
+
+*, /*universal selector, select all*/
+::before,/* except before & after (pseudo-element)*/
+::after {
+  /*takes padding and margin into account for the size of box*/
+  box-sizing: border-box;
+  /* remove margin from list */
+  margin: 0;
+  /* remove bullet points */
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+/* transform-origin */
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background: salmon;
+  /*from a state to another. Point A to point B*/
+  transition: transform 1000ms ease-in-out 1s;
+  /*from console css ease-in-out , bezier curb*/
+  /* transition: transform 2000ms cubic-bezier(0.05, 1.05, 0.43, 0.98); */
+
+  /* all properties will have transition */
+  /*transition : all 1000ms ...*/
+
+  /*
+ property (we wanna animate)
+duration s or ms
+timing function (the way the animation is done) : ease-in/out, ease-in-out...
+delay 
+*/
+
+  /* suite of transitions or state, suite of properties in a duration time
+  Point A > b > c d ef....
+  */
+  /* animation: ; */
+}
+
+.box:hover {
+  transform: rotate(180deg);
+}
+
+/* avoid putting transform all on first appearing elements. Or put it in :hover*/

@@ -1,0 +1,31 @@
+/* pseudo element to add content, styling part of content*/
+
+h1::first-letter {
+  color: crimson;
+  font-size: 150px;
+}
+
+h1::first-line {
+  font-style: italic;
+}
+/*before content of element p*/
+p::before {
+  /*mandatory even if nothing*/
+  /* content: "I add content"; */
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: crimson;
+}
+p::after {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 5px;
+  background-color: crimson;
+}
+
+.txt::selection {
+  background-color: rgba(31, 161, 31, 0.466);
+}
